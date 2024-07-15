@@ -70,8 +70,9 @@ function App() {
 
 
   return (
-    <div className="App bg-slate-300 h-screen  flex flex-col justify-center items-center gap-5 ">
-       <form action=""  className=" gap-6 flex ">
+    <div className="App bg-slate-300 h-screen  flex flex-col py-40 items-center gap-5 ">
+      <h1 className="text-4xl font-semibold ">ToDo List</h1>
+       <form action=""  className=" gap-6 flex  ">
        <input value={newTask} onChange={(e)=>{setNewTask((e).target.value)}} placeholder="Add To-Do-List" type="text" name="" id="" className="text-lg py-2 px-2 rounded-md"/>
        <button className="bg-black text-white px-2 rounded-md text-lg font-bold"  onClick={addTask}>ADD</button>
        </form>
@@ -84,7 +85,6 @@ function App() {
           )
         })}
         </div>
-       
     </div>
   );
 }
